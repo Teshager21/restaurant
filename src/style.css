@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: orange;
-    background: url('./assets/hero.jpg');
+    /* background-color: orange; */
+    background: url("./assets/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
 }

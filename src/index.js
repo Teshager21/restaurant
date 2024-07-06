@@ -1,7 +1,4 @@
 import './style.css'
+// import home from './assets/home.jpg'
 import hero from './assets/hero.jpg'
-console.log("hello webpack");
-
-const myHero= new Image();
-myHero.src=hero;
-document.body.appendChild(myHero);
+console.log("hello webpack")
