@@ -29,5 +29,13 @@ navLinks.appendChild(about);
 navLinks.appendChild(contact);
 navLinks.appendChild(reservation);
 nav.appendChild(navLinks);
+navLinks.addEventListener('mouseover',(e)=>{
+    // e.target.classList.add('nav-links-hovered');
+    let navs= navLinks.children;
+    for(let i=0;i<navs.length;i++) {
+        navs[i].classList.remove('nav-links-hover');
+    }
+    e.target.classList.add('nav-links-hover');
+})
 
 export default nav;

@@ -6,7 +6,7 @@ console.log("hello webpack")
 
 const content= document.querySelector('#content');
 
-content.appendChild(nav);
+content.appendChild(nav)
  
 // console.log(nav)
 // const title= document.createElement('h1')
