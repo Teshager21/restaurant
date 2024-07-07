@@ -6,6 +6,6 @@ banner.textContent=("Where flavor comes to life");
 banner.classList.add('text-white','banner');
 
 home.appendChild(banner);
-home.classList.add('home')
+home.classList.add('home');
 
 export default home;
