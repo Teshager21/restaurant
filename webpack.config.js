@@ -1,5 +1,6 @@
 const path= require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports={
     mode:'development',
@@ -31,7 +32,26 @@ module.exports={
             },
            
 
-        ]
+        ],
+        
     }
+    ,
+  optimization: {
+    minimizer: [
+      "...",
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.sharpMinify,
+          options: {
+            encodeOptions: {
+              // Your options for `sharp`
+              // https://sharp.pixelplumbing.com/api-output
+            },
+          },
+        },
+      }),
+    ],
+  },
+    
 
 }

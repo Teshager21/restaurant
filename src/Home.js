@@ -1,4 +1,4 @@
-
+import background from './assets/home.jpg'
 const content=document.getElementById('content');
 const home= document.createElement('div');
 const banner= document.createElement('div');
@@ -7,5 +7,6 @@ banner.classList.add('text-white','banner');
 
 home.appendChild(banner);
 home.classList.add('home');
+
 
 export default home;

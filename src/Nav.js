@@ -7,8 +7,11 @@ home.setAttribute('id','home');
 const menu= document.createElement('button');
 menu.setAttribute('id','menu');
 const about= document.createElement('button');
+about.setAttribute('id','about');
 const contact= document.createElement('button');
+contact.setAttribute('id','contact');
 const reservation= document.createElement('button');
+reservation.setAttribute('id','reservation');
 navBrand.textContent="Gourmet"
 home.textContent="Home";
 menu.textContent="Menu";
