@@ -34,7 +34,7 @@ navLinks.addEventListener('mouseover',(e)=>{
     for(let i=0;i<navs.length;i++) {
         navs[i].classList.remove('nav-links-hover');
     }
-    e.target.classList.add('nav-links-hover');
+    if(!e.target.classList.contains('btn-book')) e.target.classList.add('nav-links-hover');
 })
 
 export default nav;

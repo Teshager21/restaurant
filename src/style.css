@@ -28,6 +28,7 @@ body{
 .nav-links{
     display: flex;
     gap: 5rem;
+    text-wrap: nowrap;
 }
 
 .nav-links-hover{
@@ -47,6 +48,7 @@ body{
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 0.2rem;
+    text-wrap: nowrap;
 }
 
 .nav-brand{
@@ -100,7 +102,8 @@ body{
     color:white;
     box-shadow:  0px 4px 4px 0 rgba(0,0,0,0.2);
     /* border-left: 1px solid rgba(0,0,0,0.1); */
-    background-color: #333;
+    background-color: #222;
+    padding:0.5rem;
 
 }
 
@@ -108,10 +111,12 @@ body{
     background-color: orange;
     border-top-left-radius: 0;
     border-top-right-radius:0;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 3rem;
+    padding-left:3rem;
+    align-self: start;
 }
 
 .menu{
@@ -119,5 +124,5 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 1rem;
-    background-color: #333;
+    background-color: #100 ;
 }
